@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+       <title>
+Math Test 99 Games | Unblocked Games 76</title>
+    <meta name="description" content="Play fun and exciting Math Test 99 HTML5 games for kids.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: #f1d4ca; color: #333; }
+        header { background: linear-gradient(90deg, #f06292, #64b5f6); padding: 25px; text-align: center; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.8em; }
+        nav { margin-top: 10px; }
+        nav a { color: #fff; text-decoration: none; font-size: 1em; font-weight: bold; padding: 8px 16px; background: rgba(255,255,255,0.2); border-radius: 20px; transition: all 0.3s ease; display: inline-block; margin: 0 10px; }
+        nav a:hover { background: #fff; color: #f06292; transform: scale(1.05); }
+        .search-container { text-align: center; margin: 30px 0; position: relative; }
+        .search-container input[type="text"] { width: 60%; padding: 12px 20px; border: 2px solid #ffb74d; border-radius: 30px; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .game-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px 25px; place-items: center; padding: 40px 20px 30px; margin: 0 auto; max-width: calc(150px * 7 + 15px * 6); }
+        .game-item { background: #fff; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s, background 0.3s; width: 100%; max-width: 150px; margin: 0 auto; }
+        .game-item:hover { transform: scale(1.03); background: #ffe0b2; }
+        .game-item img { width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; object-fit: cover; margin-bottom: 10px; }
+        .game-item h3 { font-size: 1rem; font-weight: 600; margin: 10px 0 0; color: #2c2c2c; line-height: 1.3; height: 2.6em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; font-size: 0.9em; }
+        .pagination { text-align: center; margin: 20px 0; }
+        .pagination a { display: inline-block; padding: 8px 14px; margin: 2px; background: #64b5f6; color: white; text-decoration: none; border-radius: 20px; transition: background 0.2s; }
+        .pagination a.active { background: #f06292; }
+        .pagination a:hover { background: #ffb74d; }
+		.top-banner {
+      width: 100%;
+      max-width: 970px;
+      height: 250px;
+      margin: 20px auto;
+      background: #ffe0b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #333;
+      border-radius: 10px;
+    }
+    </style>
+	<style>
+.search-results {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+</style>
+	<script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, fill, center, modal-center
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('videoad')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				*/
+				
+				//alert("Video Ad Completed: " + state);
+			}
+		});
+
+			});
+
+		function show_videoad() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startVideoAd(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE.
+			alert("Ad Could not be loaded, load your content here");
+			aiptag.adplayer.aipConfig.AIP_COMPLETE();
+		}
+	}
+		</script>
+	<script async src="https://api.adinplay.com/libs/aiptag/pub/AGV/play-unblocked.github.io/tag.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎮 Math Test 99</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form id="searchForm" action="/index.php" method="get">
+            <input id="searchInput" type="text" name="q" placeholder="Search " autocomplete="off" value="">
+        </form>
+    </div>
+	<div id="results" class="search-results"></div>
+
+ <center>
+ <div class="top-banner">
+   <div id='play-unblocked-github-io_970x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_970x250'); });
+		</script>
+	</div>
+  </div>
+  </center>
+    <div class="game-list" id="gameList">
+                    <a href="lesson/121.html" class="game-item">
+                <img src="uploads/67ebdaa2744a9.png" alt="Rooftop Snipers 2" loading="lazy">
+              <!--  <h3>Rooftop Snipers 2</h3>-->
+            </a>
+                    <a href="lesson/120.html" class="game-item">
+                <img src="uploads/67ebda8f6665e.png" alt="Rooftop Snipers" loading="lazy">
+              <!--  <h3>Rooftop Snipers</h3>-->
+            </a>
+                    <a href="lesson/119.html" class="game-item">
+                <img src="uploads/67ebda7e9314f.png" alt="Roper" loading="lazy">
+              <!--  <h3>Roper</h3>-->
+            </a>
+                    <a href="lesson/118.html" class="game-item">
+                <img src="uploads/67ebda669eaef.png" alt="Rugbyio Ball Mayhem" loading="lazy">
+              <!--  <h3>Rugbyio Ball Mayhem</h3>-->
+            </a>
+                    <a href="lesson/117.html" class="game-item">
+                <img src="uploads/67ebda4bca1d3.png" alt="Run 2" loading="lazy">
+              <!--  <h3>Run 2</h3>-->
+            </a>
+                    <a href="lesson/116.html" class="game-item">
+                <img src="uploads/67eaf6bc092a2_67e8621c5f374_run&#32;3.png" alt="Run 3" loading="lazy">
+              <!--  <h3>Run 3</h3>-->
+            </a>
+                    <a href="lesson/115.html" class="game-item">
+                <img src="uploads/67ebda335a92c.png" alt="Run 3 Space" loading="lazy">
+              <!--  <h3>Run 3 Space</h3>-->
+            </a>
+                    <a href="lesson/114.html" class="game-item">
+                <img src="uploads/67ebd99762a76.png" alt="Rusher Crusher" loading="lazy">
+              <!--  <h3>Rusher Crusher</h3>-->
+            </a>
+                    <a href="lesson/113.html" class="game-item">
+                <img src="uploads/67ebd983ebb13.png" alt="Russian Car Driver" loading="lazy">
+              <!--  <h3>Russian Car Driver</h3>-->
+            </a>
+                    <a href="lesson/112.html" class="game-item">
+                <img src="uploads/67ebd9491048d.png" alt="Scary Maze" loading="lazy">
+              <!--  <h3>Scary Maze</h3>-->
+            </a>
+                    <a href="lesson/111.html" class="game-item">
+                <img src="uploads/67ebd9325c4ce.png" alt="Scrapmetal" loading="lazy">
+              <!--  <h3>Scrapmetal</h3>-->
+            </a>
+                    <a href="lesson/110.html" class="game-item">
+                <img src="uploads/67eaf67c98358_67e8588c7bd39_retro&#32;bowl.png" alt="Retro Bowl" loading="lazy">
+              <!--  <h3>Retro Bowl</h3>-->
+            </a>
+                    <a href="lesson/109.html" class="game-item">
+                <img src="uploads/67ebd8d6dab62.png" alt="Shaun The Sheep Sheep Stack" loading="lazy">
+              <!--  <h3>Shaun The Sheep Sheep Stack</h3>-->
+            </a>
+                    <a href="lesson/108.html" class="game-item">
+                <img src="uploads/67ebd8b36e221.png" alt="Short Life 2" loading="lazy">
+              <!--  <h3>Short Life 2</h3>-->
+            </a>
+                    <a href="lesson/107.html" class="game-item">
+                <img src="uploads/67ebd89cc5c51.png" alt="Siberian Strike" loading="lazy">
+              <!--  <h3>Siberian Strike</h3>-->
+            </a>
+                    <a href="lesson/106.html" class="game-item">
+                <img src="uploads/67ebd863b5cbe.png" alt="Sky Bridge" loading="lazy">
+              <!--  <h3>Sky Bridge</h3>-->
+            </a>
+                    <a href="lesson/105.html" class="game-item">
+                <img src="uploads/67ebd7b2bdcfc.png" alt="Slime Rush Td" loading="lazy">
+              <!--  <h3>Slime Rush Td</h3>-->
+            </a>
+                    <a href="lesson/104.html" class="game-item">
+                <img src="uploads/67ebd79550c2e.png" alt="Sling Tomb" loading="lazy">
+              <!--  <h3>Sling Tomb</h3>-->
+            </a>
+                    <a href="lesson/103.html" class="game-item">
+                <img src="uploads/67eb1ed482229.png" alt="Snail Bob 2" loading="lazy">
+              <!--  <h3>Snail Bob 2</h3>-->
+            </a>
+                    <a href="lesson/102.html" class="game-item">
+                <img src="uploads/67eb1ebb8d5d8.png" alt="Snail Bob 3" loading="lazy">
+              <!--  <h3>Snail Bob 3</h3>-->
+            </a>
+                    <a href="lesson/101.html" class="game-item">
+                <img src="uploads/67ebd839b95b4.png" alt="Skyblock Scorenga" loading="lazy">
+              <!--  <h3>Skyblock Scorenga</h3>-->
+            </a>
+                    <a href="lesson/100.html" class="game-item">
+                <img src="uploads/67eaf7a35530c_67e8749165950_slitherio.png" alt="Slitherio" loading="lazy">
+              <!--  <h3>Slitherio</h3>-->
+            </a>
+                    <a href="lesson/99.html" class="game-item">
+                <img src="uploads/67eb1f936f3eb.png" alt="Small Worldcup" loading="lazy">
+              <!--  <h3>Small Worldcup</h3>-->
+            </a>
+                    <a href="lesson/98.html" class="game-item">
+                <img src="uploads/67ebd73ccfe9d.png" alt="Slope 3" loading="lazy">
+              <!--  <h3>Slope 3</h3>-->
+            </a>
+                    <a href="lesson/97.html" class="game-item">
+                <img src="uploads/67ebd7145518f.png" alt="Slope Ball" loading="lazy">
+              <!--  <h3>Slope Ball</h3>-->
+            </a>
+                    <a href="lesson/96.html" class="game-item">
+                <img src="uploads/67ebd7634e635.png" alt="Slope 2" loading="lazy">
+              <!--  <h3>Slope 2</h3>-->
+            </a>
+                    <a href="lesson/95.html" class="game-item">
+                <img src="uploads/67eaf5d8bf896_67e860d2de026_slope.png" alt="Slope" loading="lazy">
+              <!--  <h3>Slope</h3>-->
+            </a>
+                    <a href="lesson/94.html" class="game-item">
+                <img src="uploads/67eb1f4fc643c.png" alt="Smashkarts" loading="lazy">
+              <!--  <h3>Smashkarts</h3>-->
+            </a>
+                    <a href="lesson/93.html" class="game-item">
+                <img src="uploads/67eb1f048c8bf.png" alt="Snail Bob" loading="lazy">
+              <!--  <h3>Snail Bob</h3>-->
+            </a>
+                    <a href="lesson/92.html" class="game-item">
+                <img src="uploads/67eb1e3f672d3.png" alt="Snail Bob 7" loading="lazy">
+              <!--  <h3>Snail Bob 7</h3>-->
+            </a>
+                    <a href="lesson/91.html" class="game-item">
+                <img src="uploads/67eb0c0009a39.png" alt="Snail Bob 8" loading="lazy">
+              <!--  <h3>Snail Bob 8</h3>-->
+            </a>
+                    <a href="lesson/90.html" class="game-item">
+                <img src="uploads/67eb0bdc1d217.png" alt="Snow Battle" loading="lazy">
+              <!--  <h3>Snow Battle</h3>-->
+            </a>
+                    <a href="lesson/89.html" class="game-item">
+                <img src="uploads/67eaf6101561b_67e905f0a1df8_snow&#32;rider&#32;3d.png" alt="Snow Rider 3D" loading="lazy">
+              <!--  <h3>Snow Rider 3D</h3>-->
+            </a>
+                    <a href="lesson/88.html" class="game-item">
+                <img src="uploads/67eb0ba308939.png" alt="Snow Ball io" loading="lazy">
+              <!--  <h3>Snow Ball io</h3>-->
+            </a>
+                    <a href="lesson/87.html" class="game-item">
+                <img src="uploads/67eb0b68b3745.png" alt="Soccer Physics 2" loading="lazy">
+              <!--  <h3>Soccer Physics 2</h3>-->
+            </a>
+                    <a href="lesson/86.html" class="game-item">
+                <img src="uploads/67eb0b2af2383.png" alt="Soccer Skills" loading="lazy">
+              <!--  <h3>Soccer Skills</h3>-->
+            </a>
+                    <a href="lesson/85.html" class="game-item">
+                <img src="uploads/67eb0afb03242.png" alt="Soccer Heads" loading="lazy">
+              <!--  <h3>Soccer Heads</h3>-->
+            </a>
+                    <a href="lesson/84.html" class="game-item">
+                <img src="uploads/67eaf5016aad8_67e9ba9c6bcf3_soccer&#32;random.png" alt="Soccer Random" loading="lazy">
+              <!--  <h3>Soccer Random</h3>-->
+            </a>
+                    <a href="lesson/83.html" class="game-item">
+                <img src="uploads/67eb0ae19cba5.png" alt="Solitaire" loading="lazy">
+              <!--  <h3>Solitaire</h3>-->
+            </a>
+                    <a href="lesson/82.html" class="game-item">
+                <img src="uploads/67eb0ac49849e.png" alt="Solitaire Classic 2" loading="lazy">
+              <!--  <h3>Solitaire Classic 2</h3>-->
+            </a>
+                    <a href="lesson/81.html" class="game-item">
+                <img src="uploads/67eb0a90b8ec3.png" alt="Sonic The Hedgehog" loading="lazy">
+              <!--  <h3>Sonic The Hedgehog</h3>-->
+            </a>
+                    <a href="lesson/80.html" class="game-item">
+                <img src="uploads/67eb0a7931071.png" alt="Space Bar Clicker" loading="lazy">
+              <!--  <h3>Space Bar Clicker</h3>-->
+            </a>
+                    <a href="lesson/79.html" class="game-item">
+                <img src="uploads/67eb0a63e3747.png" alt="Spider Solitaire" loading="lazy">
+              <!--  <h3>Spider Solitaire</h3>-->
+            </a>
+                    <a href="lesson/78.html" class="game-item">
+                <img src="uploads/67eb0a390e155.png" alt="Squid Game 2" loading="lazy">
+              <!--  <h3>Squid Game 2</h3>-->
+            </a>
+                    <a href="lesson/77.html" class="game-item">
+                <img src="uploads/67eb0a23274c0.png" alt="Stack" loading="lazy">
+              <!--  <h3>Stack</h3>-->
+            </a>
+                    <a href="lesson/76.html" class="game-item">
+                <img src="uploads/67eb0a05c05a4.png" alt="Stack Bump 3 D" loading="lazy">
+              <!--  <h3>Stack Bump 3 D</h3>-->
+            </a>
+                    <a href="lesson/75.html" class="game-item">
+                <img src="uploads/67eb09e5cfa95.png" alt="Stealing The Diamond" loading="lazy">
+              <!--  <h3>Stealing The Diamond</h3>-->
+            </a>
+                    <a href="lesson/74.html" class="game-item">
+                <img src="uploads/67eaf589e0abf_67e94eba27ae8_stick&#32;duel&#32;battle.png" alt="Stick Duel Battle" loading="lazy">
+              <!--  <h3>Stick Duel Battle</h3>-->
+            </a>
+                    <a href="lesson/73.html" class="game-item">
+                <img src="uploads/67eb09d17c468.png" alt="Stick Hero" loading="lazy">
+              <!--  <h3>Stick Hero</h3>-->
+            </a>
+                    <a href="lesson/72.html" class="game-item">
+                <img src="uploads/67eb09bf51da1.png" alt="Stickman Boost" loading="lazy">
+              <!--  <h3>Stickman Boost</h3>-->
+            </a>
+                    <a href="lesson/71.html" class="game-item">
+                <img src="uploads/67eb098260a15.png" alt="Stickman Dismount" loading="lazy">
+              <!--  <h3>Stickman Dismount</h3>-->
+            </a>
+                    <a href="lesson/70.html" class="game-item">
+                <img src="uploads/67eb096edc912.png" alt="Stickman Hook" loading="lazy">
+              <!--  <h3>Stickman Hook</h3>-->
+            </a>
+                    <a href="lesson/69.html" class="game-item">
+                <img src="uploads/67eb095f60df3.png" alt="Stick Merge" loading="lazy">
+              <!--  <h3>Stick Merge</h3>-->
+            </a>
+                    <a href="lesson/68.html" class="game-item">
+                <img src="uploads/67eb094c8ffc4.png" alt="Stick Merge 2" loading="lazy">
+              <!--  <h3>Stick Merge 2</h3>-->
+            </a>
+                    <a href="lesson/67.html" class="game-item">
+                <img src="uploads/67eb093631512.png" alt="Subway Surfers Bali" loading="lazy">
+              <!--  <h3>Subway Surfers Bali</h3>-->
+            </a>
+                    <a href="lesson/66.html" class="game-item">
+                <img src="uploads/67eb09189fd2f.png" alt="Subway Surfers Nyc" loading="lazy">
+              <!--  <h3>Subway Surfers Nyc</h3>-->
+            </a>
+                    <a href="lesson/65.html" class="game-item">
+                <img src="uploads/67eb08fdb6158.png" alt="Subway Surfers Sanfancisco" loading="lazy">
+              <!--  <h3>Subway Surfers Sanfancisco</h3>-->
+            </a>
+                    <a href="lesson/64.html" class="game-item">
+                <img src="uploads/67eb08e7a7335.png" alt="Subway Surfers Tokyo" loading="lazy">
+              <!--  <h3>Subway Surfers Tokyo</h3>-->
+            </a>
+                    <a href="lesson/63.html" class="game-item">
+                <img src="uploads/67eb08b41aed0.png" alt="Subway Surfers" loading="lazy">
+              <!--  <h3>Subway Surfers</h3>-->
+            </a>
+                    <a href="lesson/62.html" class="game-item">
+                <img src="uploads/67eb0896d58d8.png" alt="Super hero io" loading="lazy">
+              <!--  <h3>Super hero io</h3>-->
+            </a>
+            </div>
+
+    <div class="pagination">
+                                    <!--<a href="?q=&page=1" class="">-->
+				<a href="page1.html" class="">
+                    1                </a>
+                            <!--<a href="?q=&page=2" class="">-->
+				<a href="page2.html" class="">
+                    2                </a>
+                            <!--<a href="?q=&page=3" class="">-->
+				<a href="page3.html" class="">
+                    3                </a>
+                            <!--<a href="?q=&page=4" class="">-->
+				<a href="page4.html" class="">
+                    4                </a>
+                            <!--<a href="?q=&page=5" class="">-->
+				<a href="page5.html" class="">
+                    5                </a>
+                            <!--<a href="?q=&page=6" class="active">-->
+				<a href="page6.html" class="active">
+                    6                </a>
+                            <!--<a href="?q=&page=7" class="">-->
+				<a href="page7.html" class="">
+                    7                </a>
+                        </div>
+
+    <footer>
+        &copy; 2025 Math Test 99 All rights reserved.
+    </footer>
+	<div id="results" class="search-results"></div>
+
+<script>
+document.getElementById("searchInput").addEventListener("input", function () {
+    const query = this.value.trim();
+
+    if (query.length > 0) {
+        fetch("search.php?q=" + encodeURIComponent(query))
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("results").innerHTML = html;
+            });
+    } else {
+        document.getElementById("results").innerHTML = "";
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>

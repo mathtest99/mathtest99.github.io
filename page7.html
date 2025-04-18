@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+       <title>
+Math Test 99 Games | Unblocked Games 76</title>
+    <meta name="description" content="Play fun and exciting Math Test 99 HTML5 games for kids.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: #f1d4ca; color: #333; }
+        header { background: linear-gradient(90deg, #f06292, #64b5f6); padding: 25px; text-align: center; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.8em; }
+        nav { margin-top: 10px; }
+        nav a { color: #fff; text-decoration: none; font-size: 1em; font-weight: bold; padding: 8px 16px; background: rgba(255,255,255,0.2); border-radius: 20px; transition: all 0.3s ease; display: inline-block; margin: 0 10px; }
+        nav a:hover { background: #fff; color: #f06292; transform: scale(1.05); }
+        .search-container { text-align: center; margin: 30px 0; position: relative; }
+        .search-container input[type="text"] { width: 60%; padding: 12px 20px; border: 2px solid #ffb74d; border-radius: 30px; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .game-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px 25px; place-items: center; padding: 40px 20px 30px; margin: 0 auto; max-width: calc(150px * 7 + 15px * 6); }
+        .game-item { background: #fff; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s, background 0.3s; width: 100%; max-width: 150px; margin: 0 auto; }
+        .game-item:hover { transform: scale(1.03); background: #ffe0b2; }
+        .game-item img { width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; object-fit: cover; margin-bottom: 10px; }
+        .game-item h3 { font-size: 1rem; font-weight: 600; margin: 10px 0 0; color: #2c2c2c; line-height: 1.3; height: 2.6em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; font-size: 0.9em; }
+        .pagination { text-align: center; margin: 20px 0; }
+        .pagination a { display: inline-block; padding: 8px 14px; margin: 2px; background: #64b5f6; color: white; text-decoration: none; border-radius: 20px; transition: background 0.2s; }
+        .pagination a.active { background: #f06292; }
+        .pagination a:hover { background: #ffb74d; }
+		.top-banner {
+      width: 100%;
+      max-width: 970px;
+      height: 250px;
+      margin: 20px auto;
+      background: #ffe0b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #333;
+      border-radius: 10px;
+    }
+    </style>
+	<style>
+.search-results {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+</style>
+	<script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, fill, center, modal-center
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('videoad')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				*/
+				
+				//alert("Video Ad Completed: " + state);
+			}
+		});
+
+			});
+
+		function show_videoad() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startVideoAd(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE.
+			alert("Ad Could not be loaded, load your content here");
+			aiptag.adplayer.aipConfig.AIP_COMPLETE();
+		}
+	}
+		</script>
+	<script async src="https://api.adinplay.com/libs/aiptag/pub/AGV/play-unblocked.github.io/tag.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎮 Math Test 99</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form id="searchForm" action="/index.php" method="get">
+            <input id="searchInput" type="text" name="q" placeholder="Search " autocomplete="off" value="">
+        </form>
+    </div>
+	<div id="results" class="search-results"></div>
+
+ <center>
+ <div class="top-banner">
+   <div id='play-unblocked-github-io_970x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_970x250'); });
+		</script>
+	</div>
+  </div>
+  </center>
+    <div class="game-list" id="gameList">
+                    <a href="lesson/61.html" class="game-item">
+                <img src="uploads/67eb087de88b9.png" alt="Super Liquid Soccer" loading="lazy">
+              <!--  <h3>Super Liquid Soccer</h3>-->
+            </a>
+                    <a href="lesson/60.html" class="game-item">
+                <img src="uploads/67eb086a98e83.png" alt="Super Mario 64" loading="lazy">
+              <!--  <h3>Super Mario 64</h3>-->
+            </a>
+                    <a href="lesson/59.html" class="game-item">
+                <img src="uploads/67eb084aa6083.png" alt="Super Mario Wonder" loading="lazy">
+              <!--  <h3>Super Mario Wonder</h3>-->
+            </a>
+                    <a href="lesson/58.html" class="game-item">
+                <img src="uploads/67eb08290dc84.png" alt="Swerve" loading="lazy">
+              <!--  <h3>Swerve</h3>-->
+            </a>
+                    <a href="lesson/57.html" class="game-item">
+                <img src="uploads/67eb08150af4a.png" alt="Swingo" loading="lazy">
+              <!--  <h3>Swingo</h3>-->
+            </a>
+                    <a href="lesson/56.html" class="game-item">
+                <img src="uploads/67eb07f534e88.png" alt="Tag" loading="lazy">
+              <!--  <h3>Tag</h3>-->
+            </a>
+                    <a href="lesson/55.html" class="game-item">
+                <img src="uploads/67eb07b34bd3c.png" alt="Tallman Run" loading="lazy">
+              <!--  <h3>Tallman Run</h3>-->
+            </a>
+                    <a href="lesson/54.html" class="game-item">
+                <img src="uploads/67eb078bb1f1a.png" alt="Tank Trouble 2" loading="lazy">
+              <!--  <h3>Tank Trouble 2</h3>-->
+            </a>
+                    <a href="lesson/53.html" class="game-item">
+                <img src="uploads/67eb076cde112.png" alt="Tank Wars 2" loading="lazy">
+              <!--  <h3>Tank Wars 2</h3>-->
+            </a>
+                    <a href="lesson/52.html" class="game-item">
+                <img src="uploads/67eb074dedcb4.png" alt="Tank Trouble" loading="lazy">
+              <!--  <h3>Tank Trouble</h3>-->
+            </a>
+                    <a href="lesson/51.html" class="game-item">
+                <img src="uploads/67eb0723c558a.png" alt="Tap Tap Shots" loading="lazy">
+              <!--  <h3>Tap Tap Shots</h3>-->
+            </a>
+                    <a href="lesson/50.html" class="game-item">
+                <img src="uploads/67eaf5f23dfe3_67e864aaed287_temple&#32;run&#32;2.png" alt="Temple Run 2" loading="lazy">
+              <!--  <h3>Temple Run 2</h3>-->
+            </a>
+                    <a href="lesson/49.html" class="game-item">
+                <img src="uploads/67eb06e803c98.png" alt="Tetris" loading="lazy">
+              <!--  <h3>Tetris</h3>-->
+            </a>
+                    <a href="lesson/48.html" class="game-item">
+                <img src="uploads/67eb06a28b885.png" alt="The Bowling Club" loading="lazy">
+              <!--  <h3>The Bowling Club</h3>-->
+            </a>
+                    <a href="lesson/47.html" class="game-item">
+                <img src="uploads/67eb068c9220e.png" alt="The Final Earth" loading="lazy">
+              <!--  <h3>The Final Earth</h3>-->
+            </a>
+                    <a href="lesson/46.html" class="game-item">
+                <img src="uploads/67eb0657cd2d5.png" alt="The Final Earth 2" loading="lazy">
+              <!--  <h3>The Final Earth 2</h3>-->
+            </a>
+                    <a href="lesson/45.html" class="game-item">
+                <img src="uploads/67eb063febcd3.png" alt="The Impossible Quiz 2" loading="lazy">
+              <!--  <h3>The Impossible Quiz 2</h3>-->
+            </a>
+                    <a href="lesson/44.html" class="game-item">
+                <img src="uploads/67eb062ba34a8.png" alt="The heist" loading="lazy">
+              <!--  <h3>The heist</h3>-->
+            </a>
+                    <a href="lesson/43.html" class="game-item">
+                <img src="uploads/67eb03ee49119.png" alt="The Impossible Quiz" loading="lazy">
+              <!--  <h3>The Impossible Quiz</h3>-->
+            </a>
+                    <a href="lesson/42.html" class="game-item">
+                <img src="uploads/67eb03d424267.png" alt="There Is No Game" loading="lazy">
+              <!--  <h3>There Is No Game</h3>-->
+            </a>
+                    <a href="lesson/41.html" class="game-item">
+                <img src="uploads/67eaf50f788d0_67e9bb5c7cced_external.png" alt="Time Shooter 3" loading="lazy">
+              <!--  <h3>Time Shooter 3</h3>-->
+            </a>
+                    <a href="lesson/40.html" class="game-item">
+                <img src="uploads/67eaf700b455c_67e9041de95b5_tiny&#32;fishing.png" alt="Tiny Fishing" loading="lazy">
+              <!--  <h3>Tiny Fishing</h3>-->
+            </a>
+                    <a href="lesson/39.html" class="game-item">
+                <img src="uploads/67eb03aaae5f1.png" alt="Total Recoil" loading="lazy">
+              <!--  <h3>Total Recoil</h3>-->
+            </a>
+                    <a href="lesson/38.html" class="game-item">
+                <img src="uploads/67eb038a45c11.png" alt="Tower Crash 3 D" loading="lazy">
+              <!--  <h3>Tower Crash 3 D</h3>-->
+            </a>
+                    <a href="lesson/37.html" class="game-item">
+                <img src="uploads/67eb0337f2ba5.png" alt="Traffic Control" loading="lazy">
+              <!--  <h3>Traffic Control</h3>-->
+            </a>
+                    <a href="lesson/36.html" class="game-item">
+                <img src="uploads/67eb031b76316.png" alt="Transmorpher 1" loading="lazy">
+              <!--  <h3>Transmorpher 1</h3>-->
+            </a>
+                    <a href="lesson/35.html" class="game-item">
+                <img src="uploads/67eb02eb3c581.png" alt="Transmorpher 3" loading="lazy">
+              <!--  <h3>Transmorpher 3</h3>-->
+            </a>
+                    <a href="lesson/34.html" class="game-item">
+                <img src="uploads/67eb02d098015.png" alt="Trollface Quest Horror 3" loading="lazy">
+              <!--  <h3>Trollface Quest Horror 3</h3>-->
+            </a>
+                    <a href="lesson/33.html" class="game-item">
+                <img src="uploads/67eb029aa87ce.png" alt="Tropical Merge" loading="lazy">
+              <!--  <h3>Tropical Merge</h3>-->
+            </a>
+                    <a href="lesson/32.html" class="game-item">
+                <img src="uploads/67eb027093206.png" alt="Tube Jumpers" loading="lazy">
+              <!--  <h3>Tube Jumpers</h3>-->
+            </a>
+                    <a href="lesson/31.html" class="game-item">
+                <img src="uploads/67eaf57a0995c_67e94d27886d4_tunnel&#32;rush.png" alt="Tunnel Rush 2" loading="lazy">
+              <!--  <h3>Tunnel Rush 2</h3>-->
+            </a>
+                    <a href="lesson/30.html" class="game-item">
+                <img src="uploads/67eb02498176e.png" alt="Turn Turn" loading="lazy">
+              <!--  <h3>Turn Turn</h3>-->
+            </a>
+                    <a href="lesson/29.html" class="game-item">
+                <img src="uploads/67eb0216bff1b.png" alt="Unicycle Hero" loading="lazy">
+              <!--  <h3>Unicycle Hero</h3>-->
+            </a>
+                    <a href="lesson/28.html" class="game-item">
+                <img src="uploads/67eb0a4ec9f0f.png" alt="Squid Challenge 2" loading="lazy">
+              <!--  <h3>Squid Challenge 2</h3>-->
+            </a>
+                    <a href="lesson/27.html" class="game-item">
+                <img src="uploads/67eb01e7877f2.png" alt="Vampire Survivors" loading="lazy">
+              <!--  <h3>Vampire Survivors</h3>-->
+            </a>
+                    <a href="lesson/26.html" class="game-item">
+                <img src="uploads/67eb0194a30f2.png" alt="Vex 3" loading="lazy">
+              <!--  <h3>Vex 3</h3>-->
+            </a>
+                    <a href="lesson/25.html" class="game-item">
+                <img src="uploads/67eb017b799c5.png" alt="Vex 4" loading="lazy">
+              <!--  <h3>Vex 4</h3>-->
+            </a>
+                    <a href="lesson/24.html" class="game-item">
+                <img src="uploads/67eb015dec91f.png" alt="Vex 5" loading="lazy">
+              <!--  <h3>Vex 5</h3>-->
+            </a>
+                    <a href="lesson/23.html" class="game-item">
+                <img src="uploads/67eb0137d1726.png" alt="Vex 6" loading="lazy">
+              <!--  <h3>Vex 6</h3>-->
+            </a>
+                    <a href="lesson/22.html" class="game-item">
+                <img src="uploads/67eb012033f6c.png" alt="Vex 7" loading="lazy">
+              <!--  <h3>Vex 7</h3>-->
+            </a>
+                    <a href="lesson/21.html" class="game-item">
+                <img src="uploads/67eb010767ce4.png" alt="Vex 8" loading="lazy">
+              <!--  <h3>Vex 8</h3>-->
+            </a>
+                    <a href="lesson/20.html" class="game-item">
+                <img src="uploads/67eb00f515bde.png" alt="Volley Random" loading="lazy">
+              <!--  <h3>Volley Random</h3>-->
+            </a>
+                    <a href="lesson/19.html" class="game-item">
+                <img src="uploads/67eb0097355d1.png" alt="Whack Your Boss" loading="lazy">
+              <!--  <h3>Whack Your Boss</h3>-->
+            </a>
+                    <a href="lesson/18.html" class="game-item">
+                <img src="uploads/67eb0057dce1d.png" alt="Wheelie Bike" loading="lazy">
+              <!--  <h3>Wheelie Bike</h3>-->
+            </a>
+                    <a href="lesson/17.html" class="game-item">
+                <img src="uploads/67eb001325ba3.png" alt="Wheelie Bike 2" loading="lazy">
+              <!--  <h3>Wheelie Bike 2</h3>-->
+            </a>
+                    <a href="lesson/16.html" class="game-item">
+                <img src="uploads/67eaffd6a2ca0.png" alt="Wheely 2" loading="lazy">
+              <!--  <h3>Wheely 2</h3>-->
+            </a>
+                    <a href="lesson/15.html" class="game-item">
+                <img src="uploads/67eaffa352bb6.png" alt="Wheely 3" loading="lazy">
+              <!--  <h3>Wheely 3</h3>-->
+            </a>
+                    <a href="lesson/14.html" class="game-item">
+                <img src="uploads/67eaff12eec2c.png" alt="Wheely 4" loading="lazy">
+              <!--  <h3>Wheely 4</h3>-->
+            </a>
+                    <a href="lesson/13.html" class="game-item">
+                <img src="uploads/67eafee0628a9.png" alt="Wheely 5" loading="lazy">
+              <!--  <h3>Wheely 5</h3>-->
+            </a>
+                    <a href="lesson/12.html" class="game-item">
+                <img src="uploads/67eafebed6854.png" alt="Wheely 6" loading="lazy">
+              <!--  <h3>Wheely 6</h3>-->
+            </a>
+                    <a href="lesson/11.html" class="game-item">
+                <img src="uploads/67eafe88e30d6.png" alt="Wheely 7" loading="lazy">
+              <!--  <h3>Wheely 7</h3>-->
+            </a>
+                    <a href="lesson/10.html" class="game-item">
+                <img src="uploads/67eafe60b29a0.png" alt="Wheely 8" loading="lazy">
+              <!--  <h3>Wheely 8</h3>-->
+            </a>
+                    <a href="lesson/9.html" class="game-item">
+                <img src="uploads/67eafe26b873e.png" alt="Wood Block Puzzle" loading="lazy">
+              <!--  <h3>Wood Block Puzzle</h3>-->
+            </a>
+                    <a href="lesson/8.html" class="game-item">
+                <img src="uploads/67eafde7da778.png" alt="Woodventure" loading="lazy">
+              <!--  <h3>Woodventure</h3>-->
+            </a>
+                    <a href="lesson/7.html" class="game-item">
+                <img src="uploads/67eafd80429dd.png" alt="Wordle Unlimited" loading="lazy">
+              <!--  <h3>Wordle Unlimited</h3>-->
+            </a>
+                    <a href="lesson/6.html" class="game-item">
+                <img src="uploads/67eafcf39bdeb.png" alt="Worlds Hardest Game 2" loading="lazy">
+              <!--  <h3>Worlds Hardest Game 2</h3>-->
+            </a>
+                    <a href="lesson/5.html" class="game-item">
+                <img src="uploads/67eaff6dd4163.png" alt="Worlds Hardest Game" loading="lazy">
+              <!--  <h3>Worlds Hardest Game</h3>-->
+            </a>
+                    <a href="lesson/4.html" class="game-item">
+                <img src="uploads/1743451342_yohoho.png" alt="Yohoho" loading="lazy">
+              <!--  <h3>Yohoho</h3>-->
+            </a>
+                    <a href="lesson/3.html" class="game-item">
+                <img src="uploads/1743451371_1v1lol.png" alt="1V1 Lol" loading="lazy">
+              <!--  <h3>1V1 Lol</h3>-->
+            </a>
+            </div>
+
+    <div class="pagination">
+                                    <!--<a href="?q=&page=1" class="">-->
+				<a href="page1.html" class="">
+                    1                </a>
+                            <!--<a href="?q=&page=2" class="">-->
+				<a href="page2.html" class="">
+                    2                </a>
+                            <!--<a href="?q=&page=3" class="">-->
+				<a href="page3.html" class="">
+                    3                </a>
+                            <!--<a href="?q=&page=4" class="">-->
+				<a href="page4.html" class="">
+                    4                </a>
+                            <!--<a href="?q=&page=5" class="">-->
+				<a href="page5.html" class="">
+                    5                </a>
+                            <!--<a href="?q=&page=6" class="">-->
+				<a href="page6.html" class="">
+                    6                </a>
+                            <!--<a href="?q=&page=7" class="active">-->
+				<a href="page7.html" class="active">
+                    7                </a>
+                        </div>
+
+    <footer>
+        &copy; 2025 Math Test 99 All rights reserved.
+    </footer>
+	<div id="results" class="search-results"></div>
+
+<script>
+document.getElementById("searchInput").addEventListener("input", function () {
+    const query = this.value.trim();
+
+    if (query.length > 0) {
+        fetch("search.php?q=" + encodeURIComponent(query))
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("results").innerHTML = html;
+            });
+    } else {
+        document.getElementById("results").innerHTML = "";
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>

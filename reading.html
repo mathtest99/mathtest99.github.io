@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reading comprehension and fluency strategies backed by literacy research and educational best practices.">
+  <title>Reading Skills | EduBlog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #154360;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1a5276;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 980px;
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #154360;
+      color: white;
+      font-size: 0.95rem;
+    }
+    .post {
+      margin-bottom: 40px;
+    }
+    .post h2 {
+      color: #154360;
+    }
+    .post p {
+      line-height: 1.7;
+    }
+  </style>
+<style>
+  a[href="index2.html"] {
+    animation: vibrate 0.3s infinite;
+    display: inline-block;
+    position: relative;
+  }
+
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>EduBlog</h1>
+    <p>Reading Skills | Literacy Development and Research</p>
+  </header>
+  <nav>
+    <a href="math.html">Mathematics</a>
+    <a href="science.html">Science</a>
+    <a href="reading.html">Reading Skills</a>
+    <a href="extras.html">Resources</a> <a href="index2.html">ACTIVITIES 🎮</a>
+  </nav>
+<div id="top-banner" style="text-align: center; margin: 20px 0;">
+  <a href="index2.html" onclick="hideBanner()">
+    <img src="banner.png" alt="Banner">
+  </a>
+</div>
+
+<script>
+  function hideBanner() {
+    sessionStorage.setItem("hideBanner", "true");
+    document.getElementById("top-banner").style.display = "none";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (sessionStorage.getItem("hideBanner") === "true") {
+      document.getElementById("top-banner").style.display = "none";
+    }
+  });
+</script>
+
+  <main>
+    <section class="post">
+      <h2>Developing Strong Reading Skills for Academic Success</h2>
+      <p>Reading is a cornerstone of academic achievement and lifelong learning. According to the National Reading Panel (NRP), five critical components underpin effective reading instruction: phonemic awareness, phonics, fluency, vocabulary, and comprehension. At EduBlog, we explore strategies that integrate these pillars using the latest literacy research and classroom-tested practices.</p>
+
+      <p>One highly effective instructional approach is the Gradual Release of Responsibility (GRR) model, which follows an “I do, We do, You do” structure. This scaffolding allows educators to model reading strategies, practice them with students, and ultimately guide learners toward independent application. Coupled with text-dependent questioning and formative assessment, this method builds confidence and capability in readers of all levels.</p>
+
+      <p>Reading comprehension benefits significantly from strategies such as reciprocal teaching, which involves students predicting, questioning, clarifying, and summarizing texts. Research from the International Literacy Association (ILA) shows that students engaged in guided reading groups and close reading sessions demonstrate improved textual analysis and deeper meaning-making skills.</p>
+
+      <p>Effective reading programs also leverage multisensory techniques—like combining visuals, audio, and tactile activities—to support diverse learning styles. Tools such as leveled readers, interactive ebooks, and annotation software help bridge the gap for struggling readers or English language learners.</p>
+
+      <p>Classroom-based best practices include establishing a print-rich environment, reading aloud across genres, and providing access to high-interest, culturally responsive materials. Research also highlights the importance of metacognitive strategies, where students learn to think about their thinking and self-monitor their understanding while reading.</p>
+
+      <p>Whether you're building foundational phonics in early readers or facilitating literary discussions in advanced students, EduBlog supports the integration of evidence-based practices. Explore our resource links and downloadables for guided reading templates, vocabulary charts, and comprehension trackers tailored to real classrooms.</p>
+    </section>
+  </main>
+  <footer>
+    <p>EduBlog &copy; 2024 | Reading strategies aligned with ILA and NRP findings</p>
+  </footer>
+</body>
+</html>

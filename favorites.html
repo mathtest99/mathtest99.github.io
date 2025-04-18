@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Favorite Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: #f1d4ca;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #f06292, #64b5f6);
+      color: #fff;
+      margin: 0;
+    }
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .game-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .game-item img {
+      width: 100%;
+      max-width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .game-item h3 {
+      margin: 0;
+      font-size: 0.95em;
+    }
+    .game-item a {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.8em;
+    }
+    .game-item a:hover {
+      background: #388e3c;
+    }
+	header {
+            background: linear-gradient(90deg, #f06292, #64b5f6);
+            padding: 25px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+  </style>
+</head>
+<body>
+ <header>
+        <h1>🎮 GameSite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+			 <a href="favorites.php.html">Favorites</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+  <h1>❤️ Your Favorite Games</h1>
+
+      <p style="text-align: center; margin-top: 30px;">You haven't added any favorites yet.</p>
+  </body>
+</html>

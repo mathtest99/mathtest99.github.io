@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore foundational science principles with evidence-based explanations aligned with NSTA standards.">
+  <title>Science | EduBlog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #154360;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1a5276;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 980px;
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #154360;
+      color: white;
+      font-size: 0.95rem;
+    }
+    .post {
+      margin-bottom: 40px;
+    }
+    .post h2 {
+      color: #154360;
+    }
+    .post p {
+      line-height: 1.7;
+    }
+  </style>
+<style>
+  a[href="index2.html"] {
+    animation: vibrate 0.3s infinite;
+    display: inline-block;
+    position: relative;
+  }
+
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>EduBlog</h1>
+    <p>Science | Inquiry-Driven and Standards-Based</p>
+  </header>
+  <nav>
+    <a href="math.html">Mathematics</a>
+    <a href="science.html">Science</a>
+    <a href="reading.html">Reading Skills</a>
+    <a href="extras.html">Resources</a> <a href="index2.html">ACTIVITIES 🎮</a>
+  </nav>
+<div id="top-banner" style="text-align: center; margin: 20px 0;">
+  <a href="index2.html" onclick="hideBanner()">
+    <img src="banner.png" alt="Banner">
+  </a>
+</div>
+
+<script>
+  function hideBanner() {
+    sessionStorage.setItem("hideBanner", "true");
+    document.getElementById("top-banner").style.display = "none";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (sessionStorage.getItem("hideBanner") === "true") {
+      document.getElementById("top-banner").style.display = "none";
+    }
+  });
+</script>
+
+  <main>
+    <section class="post">
+      <h2>Foundations of Scientific Literacy in the Classroom</h2>
+      <p>Science education equips learners with the tools to question, investigate, and interpret the world around them. Following guidelines from the National Science Teachers Association (NSTA), effective science instruction prioritizes inquiry-based learning, real-world relevance, and the integration of scientific practices as outlined by the Next Generation Science Standards (NGSS).</p>
+
+      <p>One core framework is the 5E instructional model (Engage, Explore, Explain, Elaborate, Evaluate), which supports learners through a process of discovery and reflection. In science classrooms, this might include modeling natural phenomena, running controlled experiments, and using claim-evidence-reasoning (CER) techniques to articulate understanding.</p>
+
+      <p>Scientific literacy begins early, with hands-on exploration of physical, earth, and life sciences. For example, elementary students might observe plant growth under varying conditions to learn about photosynthesis, while older students use digital probes to study kinetic energy or water pH levels. Tools like simulations, virtual labs, and citizen science apps now extend experimentation beyond the classroom.</p>
+
+      <p>According to the National Academies Press report “Taking Science to School,” students benefit most when instruction builds on prior knowledge and emphasizes scientific argumentation. The report suggests that children are capable of higher-order scientific reasoning much earlier than previously believed—when given access to structured yet flexible environments.</p>
+
+      <p>Technology-enhanced instruction plays a vital role as well. Interactive platforms like PhET Simulations, ExploreLearning Gizmos, and NASA's educational modules provide authentic data for analysis. Paired with reflective journaling and peer discussion, these tools reinforce not just knowledge acquisition but the habits of scientists.</p>
+
+      <p>At EduBlog, we support educators with evidence-based science content, lesson starters, and professional development insights. Whether you’re teaching Newton’s laws, cellular respiration, or climate science, you’ll find ideas here to help your students think like scientists—and act like them, too.</p>
+    </section>
+  </main>
+  <footer>
+    <p>EduBlog &copy; 2024 | Science education aligned with NGSS and inquiry best practices</p>
+  </footer>
+</body>
+</html>

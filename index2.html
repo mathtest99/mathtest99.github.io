@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+       <title>
+Math Test 99 Games | Unblocked Games 76</title>
+    <meta name="description" content="Play fun and exciting Math Test 99 HTML5 games for kids.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: #f1d4ca; color: #333; }
+        header { background: linear-gradient(90deg, #f06292, #64b5f6); padding: 25px; text-align: center; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.8em; }
+        nav { margin-top: 10px; }
+        nav a { color: #fff; text-decoration: none; font-size: 1em; font-weight: bold; padding: 8px 16px; background: rgba(255,255,255,0.2); border-radius: 20px; transition: all 0.3s ease; display: inline-block; margin: 0 10px; }
+        nav a:hover { background: #fff; color: #f06292; transform: scale(1.05); }
+        .search-container { text-align: center; margin: 30px 0; position: relative; }
+        .search-container input[type="text"] { width: 60%; padding: 12px 20px; border: 2px solid #ffb74d; border-radius: 30px; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .game-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px 25px; place-items: center; padding: 40px 20px 30px; margin: 0 auto; max-width: calc(150px * 7 + 15px * 6); }
+        .game-item { background: #fff; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s, background 0.3s; width: 100%; max-width: 150px; margin: 0 auto; }
+        .game-item:hover { transform: scale(1.03); background: #ffe0b2; }
+        .game-item img { width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; object-fit: cover; margin-bottom: 10px; }
+        .game-item h3 { font-size: 1rem; font-weight: 600; margin: 10px 0 0; color: #2c2c2c; line-height: 1.3; height: 2.6em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; font-size: 0.9em; }
+        .pagination { text-align: center; margin: 20px 0; }
+        .pagination a { display: inline-block; padding: 8px 14px; margin: 2px; background: #64b5f6; color: white; text-decoration: none; border-radius: 20px; transition: background 0.2s; }
+        .pagination a.active { background: #f06292; }
+        .pagination a:hover { background: #ffb74d; }
+		.top-banner {
+      width: 100%;
+      max-width: 970px;
+      height: 250px;
+      margin: 20px auto;
+      background: #ffe0b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #333;
+      border-radius: 10px;
+    }
+    </style>
+	<style>
+.search-results {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+</style>
+	<script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, fill, center, modal-center
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('videoad')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				*/
+				
+				//alert("Video Ad Completed: " + state);
+			}
+		});
+
+			});
+
+		function show_videoad() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startVideoAd(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE.
+			alert("Ad Could not be loaded, load your content here");
+			aiptag.adplayer.aipConfig.AIP_COMPLETE();
+		}
+	}
+		</script>
+	<script async src="https://api.adinplay.com/libs/aiptag/pub/AGV/play-unblocked.github.io/tag.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎮 Math Test 99</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form id="searchForm" action="/index.php" method="get">
+            <input id="searchInput" type="text" name="q" placeholder="Search " autocomplete="off" value="">
+        </form>
+    </div>
+	<div id="results" class="search-results"></div>
+
+ <center>
+ <div class="top-banner">
+   <div id='play-unblocked-github-io_970x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_970x250'); });
+		</script>
+	</div>
+  </div>
+  </center>
+    <div class="game-list" id="gameList">
+                    <a href="lesson/421.html" class="game-item">
+                <img src="uploads/67eaff1870374.png" alt="10 Minutes Till Dawn" loading="lazy">
+              <!--  <h3>10 Minutes Till Dawn</h3>-->
+            </a>
+                    <a href="lesson/420.html" class="game-item">
+                <img src="uploads/67eaffa3dbeb0.png" alt="1010 Color Match" loading="lazy">
+              <!--  <h3>1010 Color Match</h3>-->
+            </a>
+                    <a href="lesson/419.html" class="game-item">
+                <img src="uploads/67eaffba3aa91.png" alt="1010 Deluxe" loading="lazy">
+              <!--  <h3>1010 Deluxe</h3>-->
+            </a>
+                    <a href="lesson/418.html" class="game-item">
+                <img src="uploads/67eaffceeeca0.png" alt="1 On 1 Soccer" loading="lazy">
+              <!--  <h3>1 On 1 Soccer</h3>-->
+            </a>
+                    <a href="lesson/417.html" class="game-item">
+                <img src="uploads/67eaf5cc7b083_67e856e083344_2048.png" alt="2048" loading="lazy">
+              <!--  <h3>2048</h3>-->
+            </a>
+                    <a href="lesson/416.html" class="game-item">
+                <img src="uploads/67eaffe3b9525.png" alt="2048 Fusion" loading="lazy">
+              <!--  <h3>2048 Fusion</h3>-->
+            </a>
+                    <a href="lesson/415.html" class="game-item">
+                <img src="uploads/67eb06d0720de.png" alt="3 Dbowling" loading="lazy">
+              <!--  <h3>3 Dbowling</h3>-->
+            </a>
+                    <a href="lesson/414.html" class="game-item">
+                <img src="uploads/67eb06e43c8e3.png" alt="3 Dfreekick" loading="lazy">
+              <!--  <h3>3 Dfreekick</h3>-->
+            </a>
+                    <a href="lesson/413.html" class="game-item">
+                <img src="uploads/67eb06ff6214c.png" alt="3 Pandas In Japan" loading="lazy">
+              <!--  <h3>3 Pandas In Japan</h3>-->
+            </a>
+                    <a href="lesson/412.html" class="game-item">
+                <img src="uploads/67eb0720a17f0.png" alt="99 Balls" loading="lazy">
+              <!--  <h3>99 Balls</h3>-->
+            </a>
+                    <a href="lesson/411.html" class="game-item">
+                <img src="uploads/67eb07734a204.png" alt="A Dance Of Fire And Ice" loading="lazy">
+              <!--  <h3>A Dance Of Fire And Ice</h3>-->
+            </a>
+                    <a href="lesson/410.html" class="game-item">
+                <img src="uploads/67eb07bfbc067.png" alt="Achievementunlocked" loading="lazy">
+              <!--  <h3>Achievementunlocked</h3>-->
+            </a>
+                    <a href="lesson/409.html" class="game-item">
+                <img src="uploads/67eb07f083579.png" alt="Adam And Eve 5" loading="lazy">
+              <!--  <h3>Adam And Eve 5</h3>-->
+            </a>
+                    <a href="lesson/408.html" class="game-item">
+                <img src="uploads/67eb0807e4717.png" alt="Adam And Eve Cut The Ropes" loading="lazy">
+              <!--  <h3>Adam And Eve Cut The Ropes</h3>-->
+            </a>
+                    <a href="lesson/407.html" class="game-item">
+                <img src="uploads/67eb083728407.png" alt="Adam And Eve 6" loading="lazy">
+              <!--  <h3>Adam And Eve 6</h3>-->
+            </a>
+                    <a href="lesson/406.html" class="game-item">
+                <img src="uploads/67eb084c07097.png" alt="Adam And Eve 7" loading="lazy">
+              <!--  <h3>Adam And Eve 7</h3>-->
+            </a>
+                    <a href="lesson/405.html" class="game-item">
+                <img src="uploads/67eb085fba043.png" alt="Adventure Drivers" loading="lazy">
+              <!--  <h3>Adventure Drivers</h3>-->
+            </a>
+                    <a href="lesson/404.html" class="game-item">
+                <img src="uploads/67eb0905d8aef.png" alt="Agarpaper.Io" loading="lazy">
+              <!--  <h3>Agarpaper.Io</h3>-->
+            </a>
+                    <a href="lesson/403.html" class="game-item">
+                <img src="uploads/67eb094d650eb.png" alt="Ages Of Conflict" loading="lazy">
+              <!--  <h3>Ages Of Conflict</h3>-->
+            </a>
+                    <a href="lesson/402.html" class="game-item">
+                <img src="uploads/67eb09641be69.png" alt="Alien Hominid" loading="lazy">
+              <!--  <h3>Alien Hominid</h3>-->
+            </a>
+                    <a href="lesson/401.html" class="game-item">
+                <img src="uploads/67eb0a048bead.png" alt="Amazing Rope Police" loading="lazy">
+              <!--  <h3>Amazing Rope Police</h3>-->
+            </a>
+                    <a href="lesson/400.html" class="game-item">
+                <img src="uploads/67eb0a1da81f8.png" alt="Amidst The Clouds" loading="lazy">
+              <!--  <h3>Amidst The Clouds</h3>-->
+            </a>
+                    <a href="lesson/399.html" class="game-item">
+                <img src="uploads/67eaf6ef2ab29_67e8756b16ae9_among&#32;us.png" alt="Among Us" loading="lazy">
+              <!--  <h3>Among Us</h3>-->
+            </a>
+                    <a href="lesson/398.html" class="game-item">
+                <img src="uploads/67eb0a4f98125.png" alt="Apple Shooter" loading="lazy">
+              <!--  <h3>Apple Shooter</h3>-->
+            </a>
+                    <a href="lesson/397.html" class="game-item">
+                <img src="uploads/67eb0a8787e1e.png" alt="Aquapark" loading="lazy">
+              <!--  <h3>Aquapark</h3>-->
+            </a>
+                    <a href="lesson/396.html" class="game-item">
+                <img src="uploads/67eb0ab054100.png" alt="Arcane Archer" loading="lazy">
+              <!--  <h3>Arcane Archer</h3>-->
+            </a>
+                    <a href="lesson/395.html" class="game-item">
+                <img src="uploads/67eb0ac5ed494.png" alt="Archery World Tour" loading="lazy">
+              <!--  <h3>Archery World Tour</h3>-->
+            </a>
+                    <a href="lesson/394.html" class="game-item">
+                <img src="uploads/67eb0af25aa89.png" alt="Aspiring Artist" loading="lazy">
+              <!--  <h3>Aspiring Artist</h3>-->
+            </a>
+                    <a href="lesson/393.html" class="game-item">
+                <img src="uploads/67eb0b2e87b6c.png" alt="Awesome Tanks 2" loading="lazy">
+              <!--  <h3>Awesome Tanks 2</h3>-->
+            </a>
+                    <a href="lesson/392.html" class="game-item">
+                <img src="uploads/67eb0b49b69b9.png" alt="Axis Football League" loading="lazy">
+              <!--  <h3>Axis Football League</h3>-->
+            </a>
+                    <a href="lesson/391.html" class="game-item">
+                <img src="uploads/67eb0b596ff96.png" alt="Bad Ice Cream" loading="lazy">
+              <!--  <h3>Bad Ice Cream</h3>-->
+            </a>
+                    <a href="lesson/390.html" class="game-item">
+                <img src="uploads/67eb0b7217d9b.png" alt="Bad Ice Cream 2" loading="lazy">
+              <!--  <h3>Bad Ice Cream 2</h3>-->
+            </a>
+                    <a href="lesson/389.html" class="game-item">
+                <img src="uploads/67eb0b86dc7f6.png" alt="Bad Ice Cream 3" loading="lazy">
+              <!--  <h3>Bad Ice Cream 3</h3>-->
+            </a>
+                    <a href="lesson/388.html" class="game-item">
+                <img src="uploads/67eb0b9f1c5d8.png" alt="Baldis Basics" loading="lazy">
+              <!--  <h3>Baldis Basics</h3>-->
+            </a>
+                    <a href="lesson/387.html" class="game-item">
+                <img src="uploads/67eb0c0678604.png" alt="Ball Mayhem" loading="lazy">
+              <!--  <h3>Ball Mayhem</h3>-->
+            </a>
+                    <a href="lesson/386.html" class="game-item">
+                <img src="uploads/67ebdcc98f05b.png" alt="Ballistic" loading="lazy">
+              <!--  <h3>Ballistic</h3>-->
+            </a>
+                    <a href="lesson/385.html" class="game-item">
+                <img src="uploads/67ebdd0a4c4bd.png" alt="Ball Sort Halloween" loading="lazy">
+              <!--  <h3>Ball Sort Halloween</h3>-->
+            </a>
+                    <a href="lesson/384.html" class="game-item">
+                <img src="uploads/67ebdd1c9b5c3.png" alt="Ball Sort Puzzle" loading="lazy">
+              <!--  <h3>Ball Sort Puzzle</h3>-->
+            </a>
+                    <a href="lesson/383.html" class="game-item">
+                <img src="uploads/67ebdd3155727.png" alt="Ball Sort Soccer" loading="lazy">
+              <!--  <h3>Ball Sort Soccer</h3>-->
+            </a>
+                    <a href="lesson/382.html" class="game-item">
+                <img src="uploads/67ebdd5c221ab.png" alt="Basket Random" loading="lazy">
+              <!--  <h3>Basket Random</h3>-->
+            </a>
+                    <a href="lesson/381.html" class="game-item">
+                <img src="uploads/67ebdd6eee865.png" alt="Basket And Ball" loading="lazy">
+              <!--  <h3>Basket And Ball</h3>-->
+            </a>
+                    <a href="lesson/380.html" class="game-item">
+                <img src="uploads/67ebdd84353b3.png" alt="Basketball Io" loading="lazy">
+              <!--  <h3>Basketball Io</h3>-->
+            </a>
+                    <a href="lesson/379.html" class="game-item">
+                <img src="uploads/67eaf4e3737a7_67e9b005619f5_basketball&#32;legends.png" alt="Basketball Legends" loading="lazy">
+              <!--  <h3>Basketball Legends</h3>-->
+            </a>
+                    <a href="lesson/378.html" class="game-item">
+                <img src="uploads/67ebdd984433d.png" alt="Basketball Legends 2020" loading="lazy">
+              <!--  <h3>Basketball Legends 2020</h3>-->
+            </a>
+                    <a href="lesson/377.html" class="game-item">
+                <img src="uploads/67ebdda98a615.png" alt="Basketball Line" loading="lazy">
+              <!--  <h3>Basketball Line</h3>-->
+            </a>
+                    <a href="lesson/376.html" class="game-item">
+                <img src="uploads/67eaf5e5895bb_67e863af587c7_basketball&#32;stars.png" alt="Basketball Stars" loading="lazy">
+              <!--  <h3>Basketball Stars</h3>-->
+            </a>
+                    <a href="lesson/375.html" class="game-item">
+                <img src="uploads/67ebddbcd361a.png" alt="Basketbros Io" loading="lazy">
+              <!--  <h3>Basketbros Io</h3>-->
+            </a>
+                    <a href="lesson/374.html" class="game-item">
+                <img src="uploads/67ebdde8d0186.png" alt="Basket Champs" loading="lazy">
+              <!--  <h3>Basket Champs</h3>-->
+            </a>
+                    <a href="lesson/373.html" class="game-item">
+                <img src="uploads/67ebddfa64fb2.png" alt="Big Tower Tiny Square" loading="lazy">
+              <!--  <h3>Big Tower Tiny Square</h3>-->
+            </a>
+                    <a href="lesson/372.html" class="game-item">
+                <img src="uploads/67ebde0c6b764.png" alt="Biker Street" loading="lazy">
+              <!--  <h3>Biker Street</h3>-->
+            </a>
+                    <a href="lesson/371.html" class="game-item">
+                <img src="uploads/67eaf55c64584_67e85ec957f5b_bitlife.png" alt="Bitlife" loading="lazy">
+              <!--  <h3>Bitlife</h3>-->
+            </a>
+                    <a href="lesson/370.html" class="game-item">
+                <img src="uploads/67ebde1f860fb.png" alt="Block Craft Zombie Attack" loading="lazy">
+              <!--  <h3>Block Craft Zombie Attack</h3>-->
+            </a>
+                    <a href="lesson/369.html" class="game-item">
+                <img src="uploads/67ebde37a5ff1.png" alt="Blockpost 2" loading="lazy">
+              <!--  <h3>Blockpost 2</h3>-->
+            </a>
+                    <a href="lesson/368.html" class="game-item">
+                <img src="uploads/67ebde67ce279.png" alt="Block The Pig" loading="lazy">
+              <!--  <h3>Block The Pig</h3>-->
+            </a>
+                    <a href="lesson/367.html" class="game-item">
+                <img src="uploads/67ebde7d4c96b.png" alt="Blocky Snakes" loading="lazy">
+              <!--  <h3>Blocky Snakes</h3>-->
+            </a>
+                    <a href="lesson/366.html" class="game-item">
+                <img src="uploads/67ebdebfc424c.png" alt="Bloons Tower Defense 2" loading="lazy">
+              <!--  <h3>Bloons Tower Defense 2</h3>-->
+            </a>
+                    <a href="lesson/365.html" class="game-item">
+                <img src="uploads/67ebdf0617c8a.png" alt="Bloxors" loading="lazy">
+              <!--  <h3>Bloxors</h3>-->
+            </a>
+                    <a href="lesson/364.html" class="game-item">
+                <img src="uploads/67ebdf1726281.png" alt="Blumgi Rocket" loading="lazy">
+              <!--  <h3>Blumgi Rocket</h3>-->
+            </a>
+                    <a href="lesson/363.html" class="game-item">
+                <img src="uploads/67ebdf2bb2a40.png" alt="Blumgi Slime" loading="lazy">
+              <!--  <h3>Blumgi Slime</h3>-->
+            </a>
+                    <a href="lesson/362.html" class="game-item">
+                <img src="uploads/67ebdf4a68ee1.png" alt="Bob The Robber 2" loading="lazy">
+              <!--  <h3>Bob The Robber 2</h3>-->
+            </a>
+            </div>
+
+    <div class="pagination">
+                                    <!--<a href="?q=&page=1" class="active">-->
+				<a href="page1.html" class="active">
+                    1                </a>
+                            <!--<a href="?q=&page=2" class="">-->
+				<a href="page2.html" class="">
+                    2                </a>
+                            <!--<a href="?q=&page=3" class="">-->
+				<a href="page3.html" class="">
+                    3                </a>
+                            <!--<a href="?q=&page=4" class="">-->
+				<a href="page4.html" class="">
+                    4                </a>
+                            <!--<a href="?q=&page=5" class="">-->
+				<a href="page5.html" class="">
+                    5                </a>
+                            <!--<a href="?q=&page=6" class="">-->
+				<a href="page6.html" class="">
+                    6                </a>
+                            <!--<a href="?q=&page=7" class="">-->
+				<a href="page7.html" class="">
+                    7                </a>
+                        </div>
+
+    <footer>
+        &copy; 2025 Math Test 99 All rights reserved.
+    </footer>
+	<div id="results" class="search-results"></div>
+
+<script>
+document.getElementById("searchInput").addEventListener("input", function () {
+    const query = this.value.trim();
+
+    if (query.length > 0) {
+        fetch("search.php?q=" + encodeURIComponent(query))
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("results").innerHTML = html;
+            });
+    } else {
+        document.getElementById("results").innerHTML = "";
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+       <title>
+Math Test 99 Games | Unblocked Games 76</title>
+    <meta name="description" content="Play fun and exciting Math Test 99 HTML5 games for kids.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: 'Comic Sans MS', cursive, sans-serif; background: #f1d4ca; color: #333; }
+        header { background: linear-gradient(90deg, #f06292, #64b5f6); padding: 25px; text-align: center; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.8em; }
+        nav { margin-top: 10px; }
+        nav a { color: #fff; text-decoration: none; font-size: 1em; font-weight: bold; padding: 8px 16px; background: rgba(255,255,255,0.2); border-radius: 20px; transition: all 0.3s ease; display: inline-block; margin: 0 10px; }
+        nav a:hover { background: #fff; color: #f06292; transform: scale(1.05); }
+        .search-container { text-align: center; margin: 30px 0; position: relative; }
+        .search-container input[type="text"] { width: 60%; padding: 12px 20px; border: 2px solid #ffb74d; border-radius: 30px; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .game-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px 25px; place-items: center; padding: 40px 20px 30px; margin: 0 auto; max-width: calc(150px * 7 + 15px * 6); }
+        .game-item { background: #fff; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s, background 0.3s; width: 100%; max-width: 150px; margin: 0 auto; }
+        .game-item:hover { transform: scale(1.03); background: #ffe0b2; }
+        .game-item img { width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; object-fit: cover; margin-bottom: 10px; }
+        .game-item h3 { font-size: 1rem; font-weight: 600; margin: 10px 0 0; color: #2c2c2c; line-height: 1.3; height: 2.6em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; font-size: 0.9em; }
+        .pagination { text-align: center; margin: 20px 0; }
+        .pagination a { display: inline-block; padding: 8px 14px; margin: 2px; background: #64b5f6; color: white; text-decoration: none; border-radius: 20px; transition: background 0.2s; }
+        .pagination a.active { background: #f06292; }
+        .pagination a:hover { background: #ffb74d; }
+		.top-banner {
+      width: 100%;
+      max-width: 970px;
+      height: 250px;
+      margin: 20px auto;
+      background: #ffe0b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #333;
+      border-radius: 10px;
+    }
+    </style>
+	<style>
+.search-results {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+</style>
+	<script>
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, fill, center, modal-center
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('videoad')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				*/
+				
+				//alert("Video Ad Completed: " + state);
+			}
+		});
+
+			});
+
+		function show_videoad() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startVideoAd(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE.
+			alert("Ad Could not be loaded, load your content here");
+			aiptag.adplayer.aipConfig.AIP_COMPLETE();
+		}
+	}
+		</script>
+	<script async src="https://api.adinplay.com/libs/aiptag/pub/AGV/play-unblocked.github.io/tag.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎮 Math Test 99</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form id="searchForm" action="/index.php" method="get">
+            <input id="searchInput" type="text" name="q" placeholder="Search " autocomplete="off" value="">
+        </form>
+    </div>
+	<div id="results" class="search-results"></div>
+
+ <center>
+ <div class="top-banner">
+   <div id='play-unblocked-github-io_970x250'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_970x250'); });
+		</script>
+	</div>
+  </div>
+  </center>
+    <div class="game-list" id="gameList">
+                    <a href="lesson/181.html" class="game-item">
+                <img src="uploads/67ebe6970577e.png" alt="Nitro Street Run 2" loading="lazy">
+              <!--  <h3>Nitro Street Run 2</h3>-->
+            </a>
+                    <a href="lesson/180.html" class="game-item">
+                <img src="uploads/67ebe68339205.png" alt="Nitro Tuk Tuk" loading="lazy">
+              <!--  <h3>Nitro Tuk Tuk</h3>-->
+            </a>
+                    <a href="lesson/179.html" class="game-item">
+                <img src="uploads/67ebe654c0e39.png" alt="Nova Covered Ops" loading="lazy">
+              <!--  <h3>Nova Covered Ops</h3>-->
+            </a>
+                    <a href="lesson/178.html" class="game-item">
+                <img src="uploads/67ebe63ecfb2c.png" alt="Nubic Stunt Car Crasher" loading="lazy">
+              <!--  <h3>Nubic Stunt Car Crasher</h3>-->
+            </a>
+                    <a href="lesson/177.html" class="game-item">
+                <img src="uploads/67eaf73376ee5_67e87371d869d_ovo.png" alt="OvO" loading="lazy">
+              <!--  <h3>OvO</h3>-->
+            </a>
+                    <a href="lesson/176.html" class="game-item">
+                <img src="uploads/67ebe5e4a4337.png" alt="Ovo 3" loading="lazy">
+              <!--  <h3>Ovo 3</h3>-->
+            </a>
+                    <a href="lesson/175.html" class="game-item">
+                <img src="uploads/67ebe5d19084f.png" alt="Ovo 4" loading="lazy">
+              <!--  <h3>Ovo 4</h3>-->
+            </a>
+                    <a href="lesson/174.html" class="game-item">
+                <img src="uploads/67ebe5b57b929.png" alt="OvO 2" loading="lazy">
+              <!--  <h3>OvO 2</h3>-->
+            </a>
+                    <a href="lesson/173.html" class="game-item">
+                <img src="uploads/67ebe59bceb24.png" alt="Ovo Dimensions" loading="lazy">
+              <!--  <h3>Ovo Dimensions</h3>-->
+            </a>
+                    <a href="lesson/172.html" class="game-item">
+                <img src="uploads/67ebe58bcfeb6.png" alt="Pacman Html 5" loading="lazy">
+              <!--  <h3>Pacman Html 5</h3>-->
+            </a>
+                    <a href="lesson/171.html" class="game-item">
+                <img src="uploads/67ebe5738e864.png" alt="Papa Cherry Saga" loading="lazy">
+              <!--  <h3>Papa Cherry Saga</h3>-->
+            </a>
+                    <a href="lesson/170.html" class="game-item">
+                <img src="uploads/67eaf740d8e8c_67e858130e26c_papasbakeria.png" alt="Papas Bakeria" loading="lazy">
+              <!--  <h3>Papas Bakeria</h3>-->
+            </a>
+                    <a href="lesson/169.html" class="game-item">
+                <img src="uploads/67ebe566d6f82.png" alt="Papas Burgeria" loading="lazy">
+              <!--  <h3>Papas Burgeria</h3>-->
+            </a>
+                    <a href="lesson/168.html" class="game-item">
+                <img src="uploads/67ebe558e89f6.png" alt="Papas Cheeseria" loading="lazy">
+              <!--  <h3>Papas Cheeseria</h3>-->
+            </a>
+                    <a href="lesson/167.html" class="game-item">
+                <img src="uploads/67ebe54707aac.png" alt="Papas Cupcakeria" loading="lazy">
+              <!--  <h3>Papas Cupcakeria</h3>-->
+            </a>
+                    <a href="lesson/166.html" class="game-item">
+                <img src="uploads/67ebe538c322c.png" alt="Papas Donuteria" loading="lazy">
+              <!--  <h3>Papas Donuteria</h3>-->
+            </a>
+                    <a href="lesson/165.html" class="game-item">
+                <img src="uploads/67ebe52974e81.png" alt="Papas Freezeria" loading="lazy">
+              <!--  <h3>Papas Freezeria</h3>-->
+            </a>
+                    <a href="lesson/164.html" class="game-item">
+                <img src="uploads/67ebe5194418c.png" alt="Papas Hot Doggeria" loading="lazy">
+              <!--  <h3>Papas Hot Doggeria</h3>-->
+            </a>
+                    <a href="lesson/163.html" class="game-item">
+                <img src="uploads/67ebe4f36fea4.png" alt="Papas Pan Cakeria" loading="lazy">
+              <!--  <h3>Papas Pan Cakeria</h3>-->
+            </a>
+                    <a href="lesson/162.html" class="game-item">
+                <img src="uploads/67ebe4e221a2a.png" alt="Papas Pastaria" loading="lazy">
+              <!--  <h3>Papas Pastaria</h3>-->
+            </a>
+                    <a href="lesson/161.html" class="game-item">
+                <img src="uploads/67ebe4cc6ff23.png" alt="Papas Pizzeria" loading="lazy">
+              <!--  <h3>Papas Pizzeria</h3>-->
+            </a>
+                    <a href="lesson/160.html" class="game-item">
+                <img src="uploads/67ebe4b91abd6.png" alt="Papas Scooperia" loading="lazy">
+              <!--  <h3>Papas Scooperia</h3>-->
+            </a>
+                    <a href="lesson/159.html" class="game-item">
+                <img src="uploads/67ebe49f79424.png" alt="Papas Sushiria" loading="lazy">
+              <!--  <h3>Papas Sushiria</h3>-->
+            </a>
+                    <a href="lesson/158.html" class="game-item">
+                <img src="uploads/67ebe481f1b8d.png" alt="Papas Taco Mia" loading="lazy">
+              <!--  <h3>Papas Taco Mia</h3>-->
+            </a>
+                    <a href="lesson/157.html" class="game-item">
+                <img src="uploads/67ebe4713aaf4.png" alt="Papas Wingeria" loading="lazy">
+              <!--  <h3>Papas Wingeria</h3>-->
+            </a>
+                    <a href="lesson/156.html" class="game-item">
+                <img src="uploads/67eaf56312762_67e85f42a7dc5_paperio.png" alt="Paper Io 2" loading="lazy">
+              <!--  <h3>Paper Io 2</h3>-->
+            </a>
+                    <a href="lesson/155.html" class="game-item">
+                <img src="uploads/67ebe45c6871c.png" alt="Parking Fury" loading="lazy">
+              <!--  <h3>Parking Fury</h3>-->
+            </a>
+                    <a href="lesson/154.html" class="game-item">
+                <img src="uploads/67ebe447a0042.png" alt="Parking Fury 2" loading="lazy">
+              <!--  <h3>Parking Fury 2</h3>-->
+            </a>
+                    <a href="lesson/153.html" class="game-item">
+                <img src="uploads/67ebe4355d5c3.png" alt="Parking Fury 3" loading="lazy">
+              <!--  <h3>Parking Fury 3</h3>-->
+            </a>
+                    <a href="lesson/152.html" class="game-item">
+                <img src="uploads/67ebe4211fda2.png" alt="Parkour Block 3 D" loading="lazy">
+              <!--  <h3>Parkour Block 3 D</h3>-->
+            </a>
+                    <a href="lesson/151.html" class="game-item">
+                <img src="uploads/67ebe4052df13.png" alt="Parkour Race" loading="lazy">
+              <!--  <h3>Parkour Race</h3>-->
+            </a>
+                    <a href="lesson/150.html" class="game-item">
+                <img src="uploads/67ebe3eeb41a6.png" alt="Park Out" loading="lazy">
+              <!--  <h3>Park Out</h3>-->
+            </a>
+                    <a href="lesson/149.html" class="game-item">
+                <img src="uploads/67ebe3dec0ccf.png" alt="Penalty Champs 22" loading="lazy">
+              <!--  <h3>Penalty Champs 22</h3>-->
+            </a>
+                    <a href="lesson/148.html" class="game-item">
+                <img src="uploads/67ebe3c934596.png" alt="Penalty Kick Online" loading="lazy">
+              <!--  <h3>Penalty Kick Online</h3>-->
+            </a>
+                    <a href="lesson/147.html" class="game-item">
+                <img src="uploads/67ebe3b1ebe2b.png" alt="Pirates Path Of The Buccaneer" loading="lazy">
+              <!--  <h3>Pirates Path Of The Buccaneer</h3>-->
+            </a>
+                    <a href="lesson/146.html" class="game-item">
+                <img src="uploads/67ebe397ca3f6.png" alt="Pixel Gun Survival" loading="lazy">
+              <!--  <h3>Pixel Gun Survival</h3>-->
+            </a>
+                    <a href="lesson/145.html" class="game-item">
+                <img src="uploads/67eaf6704977f_67e8574c9ee94_8ballpool.png" alt="8 Ball Pool" loading="lazy">
+              <!--  <h3>8 Ball Pool</h3>-->
+            </a>
+                    <a href="lesson/144.html" class="game-item">
+                <img src="uploads/67ebe764df01e.png" alt="Moto X3M2" loading="lazy">
+              <!--  <h3>Moto X3M2</h3>-->
+            </a>
+                    <a href="lesson/143.html" class="game-item">
+                <img src="uploads/67ebe3805ec1e.png" alt="Pixel Smash Duel" loading="lazy">
+              <!--  <h3>Pixel Smash Duel</h3>-->
+            </a>
+                    <a href="lesson/142.html" class="game-item">
+                <img src="uploads/67ebe329cdc97.png" alt="Pizza Tower" loading="lazy">
+              <!--  <h3>Pizza Tower</h3>-->
+            </a>
+                    <a href="lesson/141.html" class="game-item">
+                <img src="uploads/67ebe3162557f.png" alt="Pokemon Emerald 2" loading="lazy">
+              <!--  <h3>Pokemon Emerald 2</h3>-->
+            </a>
+                    <a href="lesson/140.html" class="game-item">
+                <img src="uploads/67ebe30065c03.png" alt="Pokemon Emerald Version" loading="lazy">
+              <!--  <h3>Pokemon Emerald Version</h3>-->
+            </a>
+                    <a href="lesson/139.html" class="game-item">
+                <img src="uploads/67ebe2ee03cf0.png" alt="Pokemon Firered Version" loading="lazy">
+              <!--  <h3>Pokemon Firered Version</h3>-->
+            </a>
+                    <a href="lesson/138.html" class="game-item">
+                <img src="uploads/67ebe2d6c88aa.png" alt="Police Car Drive" loading="lazy">
+              <!--  <h3>Police Car Drive</h3>-->
+            </a>
+                    <a href="lesson/137.html" class="game-item">
+                <img src="uploads/67ebe267ae784.png" alt="Poppy Playtime Game" loading="lazy">
+              <!--  <h3>Poppy Playtime Game</h3>-->
+            </a>
+                    <a href="lesson/136.html" class="game-item">
+                <img src="uploads/67ebe25007e18.png" alt="Pou" loading="lazy">
+              <!--  <h3>Pou</h3>-->
+            </a>
+                    <a href="lesson/135.html" class="game-item">
+                <img src="uploads/67ebe20fc11e9.png" alt="Pudding Monsters" loading="lazy">
+              <!--  <h3>Pudding Monsters</h3>-->
+            </a>
+                    <a href="lesson/134.html" class="game-item">
+                <img src="uploads/67ebe1e07e408.png" alt="Pull Him Out" loading="lazy">
+              <!--  <h3>Pull Him Out</h3>-->
+            </a>
+                    <a href="lesson/133.html" class="game-item">
+                <img src="uploads/67ebe1a40f9e1.png" alt="Quake" loading="lazy">
+              <!--  <h3>Quake</h3>-->
+            </a>
+                    <a href="lesson/132.html" class="game-item">
+                <img src="uploads/67ebdc476f25a.png" alt="Rabbit Samurai 2" loading="lazy">
+              <!--  <h3>Rabbit Samurai 2</h3>-->
+            </a>
+                    <a href="lesson/131.html" class="game-item">
+                <img src="uploads/67ebdc3714a65.png" alt="Racing Monster Trucks" loading="lazy">
+              <!--  <h3>Racing Monster Trucks</h3>-->
+            </a>
+                    <a href="lesson/130.html" class="game-item">
+                <img src="uploads/67ebdc1d98a2b.png" alt="Raft Wars 2" loading="lazy">
+              <!--  <h3>Raft Wars 2</h3>-->
+            </a>
+                    <a href="lesson/129.html" class="game-item">
+                <img src="uploads/67ebdc09ce81f.png" alt="Real Football" loading="lazy">
+              <!--  <h3>Real Football</h3>-->
+            </a>
+                    <a href="lesson/128.html" class="game-item">
+                <img src="uploads/67eaf5becfe09_67e94f3cd493e_real&#32;football.png" alt="Real Football Challenge" loading="lazy">
+              <!--  <h3>Real Football Challenge</h3>-->
+            </a>
+                    <a href="lesson/127.html" class="game-item">
+                <img src="uploads/67ebdbf1d71c9.png" alt="Real Snakesio" loading="lazy">
+              <!--  <h3>Real Snakesio</h3>-->
+            </a>
+                    <a href="lesson/126.html" class="game-item">
+                <img src="uploads/67ebdba91ba91.png" alt="Red Ball 6 Bounce Ball" loading="lazy">
+              <!--  <h3>Red Ball 6 Bounce Ball</h3>-->
+            </a>
+                    <a href="lesson/125.html" class="game-item">
+                <img src="uploads/67ebdb910b194.png" alt="Riddle School 5" loading="lazy">
+              <!--  <h3>Riddle School 5</h3>-->
+            </a>
+                    <a href="lesson/124.html" class="game-item">
+                <img src="uploads/67ebdb6e57e50.png" alt="Riddle Transfer 2" loading="lazy">
+              <!--  <h3>Riddle Transfer 2</h3>-->
+            </a>
+                    <a href="lesson/123.html" class="game-item">
+                <img src="uploads/67ebdafb0b828.png" alt="Riddle School 2" loading="lazy">
+              <!--  <h3>Riddle School 2</h3>-->
+            </a>
+                    <a href="lesson/122.html" class="game-item">
+                <img src="uploads/67ebdab8d29b7.png" alt="Rise Of Neon Square" loading="lazy">
+              <!--  <h3>Rise Of Neon Square</h3>-->
+            </a>
+            </div>
+
+    <div class="pagination">
+                                    <!--<a href="?q=&page=1" class="">-->
+				<a href="page1.html" class="">
+                    1                </a>
+                            <!--<a href="?q=&page=2" class="">-->
+				<a href="page2.html" class="">
+                    2                </a>
+                            <!--<a href="?q=&page=3" class="">-->
+				<a href="page3.html" class="">
+                    3                </a>
+                            <!--<a href="?q=&page=4" class="">-->
+				<a href="page4.html" class="">
+                    4                </a>
+                            <!--<a href="?q=&page=5" class="active">-->
+				<a href="page5.html" class="active">
+                    5                </a>
+                            <!--<a href="?q=&page=6" class="">-->
+				<a href="page6.html" class="">
+                    6                </a>
+                            <!--<a href="?q=&page=7" class="">-->
+				<a href="page7.html" class="">
+                    7                </a>
+                        </div>
+
+    <footer>
+        &copy; 2025 Math Test 99 All rights reserved.
+    </footer>
+	<div id="results" class="search-results"></div>
+
+<script>
+document.getElementById("searchInput").addEventListener("input", function () {
+    const query = this.value.trim();
+
+    if (query.length > 0) {
+        fetch("search.php?q=" + encodeURIComponent(query))
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("results").innerHTML = html;
+            });
+    } else {
+        document.getElementById("results").innerHTML = "";
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>

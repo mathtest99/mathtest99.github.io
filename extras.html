@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated academic tools, open educational resources, and digital aids for supporting school-based learning.">
+  <title>Resources | EduBlog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #154360;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1a5276;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 980px;
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #154360;
+      color: white;
+      font-size: 0.95rem;
+    }
+    .post {
+      margin-bottom: 40px;
+    }
+    .post h2 {
+      color: #154360;
+    }
+    .post p {
+      line-height: 1.7;
+    }
+  </style>
+<style>
+  a[href="index2.html"] {
+    animation: vibrate 0.3s infinite;
+    display: inline-block;
+    position: relative;
+  }
+
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>EduBlog</h1>
+    <p>Resources | Supporting Educational Access and Enrichment</p>
+  </header>
+  <nav>
+    <a href="math.html">Mathematics</a>
+    <a href="science.html">Science</a>
+    <a href="reading.html">Reading Skills</a>
+    <a href="extras.html">Resources</a> <a href="index2.html">ACTIVITIES 🎮</a>
+  </nav>
+<div id="top-banner" style="text-align: center; margin: 20px 0;">
+  <a href="index2.html" onclick="hideBanner()">
+    <img src="banner.png" alt="Banner">
+  </a>
+</div>
+
+<script>
+  function hideBanner() {
+    sessionStorage.setItem("hideBanner", "true");
+    document.getElementById("top-banner").style.display = "none";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (sessionStorage.getItem("hideBanner") === "true") {
+      document.getElementById("top-banner").style.display = "none";
+    }
+  });
+</script>
+
+  <main>
+    <section class="post">
+      <h2>High-Quality Learning Resources for Educators and Students</h2>
+      <p>In today’s digital age, access to high-quality educational resources is more important than ever. EduBlog provides curated tools, downloadable assets, and links to vetted open educational resources (OER) aligned with academic standards. These resources support a range of classroom goals, from differentiation and student engagement to formative assessment and skill practice.</p>
+
+      <p>We offer access to printable worksheets for math practice, guided reading templates, scientific observation charts, and vocabulary organizers. Each item is designed using principles from Universal Design for Learning (UDL) and is intended to meet diverse learner needs. The resources on EduBlog can be adapted for in-person instruction, remote learning, or hybrid environments.</p>
+
+      <p>Key platforms we recommend include Khan Academy for personalized instruction, CommonLit for leveled reading passages, PhET for interactive science simulations, and Desmos for algebra and graphing exploration. These platforms are research-supported and widely used in academic settings globally.</p>
+
+      <p>Additionally, we highlight tools that promote digital citizenship and responsible technology use. Platforms like BrainPOP, National Geographic Kids, and Code.org are included not only for their educational merit but also their commitment to safe student experiences online.</p>
+
+      <p>Teachers can also find professional development materials on assessment literacy, curriculum mapping, and data-driven instruction through our recommended educator portals. Our goal is to serve as a one-stop hub for expanding educational impact through accessible, high-quality tools.</p>
+
+      <p>Bookmark this page for regularly updated downloads, lesson plan templates, and direct access to external learning hubs that match your instructional objectives and grade-level focus.</p>
+    </section>
+  </main>
+  <footer>
+    <p>EduBlog &copy; 2024 | Tools and platforms for evidence-based learning</p>
+  </footer>
+</body>
+</html>
